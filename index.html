@@ -92,6 +92,7 @@
 
       document.getElementById('email').addEventListener('keyup', (event) => {
          document.getElementById('email-field').innerHTML = event.target.value;
+         document.getElementById('email-field').setAttribute('href', `mailto:${event.target.value}`);
       })
 
       document.getElementById('phone').addEventListener('keyup', (event) => {
