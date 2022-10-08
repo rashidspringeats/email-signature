@@ -1,71 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>HTML 5 Boilerplate</title>
-      <style>
-         body{
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>HTML 5 Boilerplate</title>
+   <style>
+      body {
          font-family: Arial, Helvetica, sans-serif;
          font-weight: 100;
-         }
-         .container{
-            display: flex;
-         }
-         input{
+      }
+
+      .container {
+         display: flex;
+      }
+
+      input {
          padding: 6px;
          font-size: 14px;
-         border:1px solid grey;
+         border: 1px solid grey;
          border-radius: 4px;
-         }
-         label{
+      }
+
+      label {
          font-size: 12px;
          display: inline-block;
          padding-bottom: 8px;
-         }
-         .code-snippet{
-            display: inline-block;
-            background-color: #e5e5e5;
-            padding: 0px 10px;
-            width: 100%;
-            max-width: 400px;
-            overflow-x: scroll;
-            border:1px solid #cdcdcd;
-            border-radius: 4px;
-            margin-top: 10px;
-         }
-      </style>
-   </head>
-   <body style="width: 900px; margin: 0 auto;">
-      <h2 style="text-align: center;">Signature Form</h2>
-      <div style="display: flex; justify-content: space-around;">
-         <div>
-            <form action="/action_page.php">
-               <label for="fname">Name</label><br>
-               <input type="text" id="name" name="fname" placeholder="John Smith"><br><br/>
-               <label for="lname">Title</label><br>
-               <input type="text" id="title" name="lname" placeholder="Title"><br><br>
-               <label for="lname">Email</label><br>
-               <input type="text" id="email" name="email" placeholder="you@springeats.com"><br><br>
-               <label for="lname">Phone</label><br>
-               <input type="text" id="phone" name="phone" placeholder="xxx-xxx-xxxx"><br><br>
-               <label for="lname">Calendly Name</label><br>
-               <input type="text" id="calendly-name" name="calendly" placeholder="calendly name"><br><br>
-               <label for="lname">Calendly Link</label><br>
-               <input type="text" id="calendly-link" name="calendly-link" placeholder="calendly link"><br><br>
-            </form>
-         </div>
+      }
+
+      #code-snippet-block {
+         display: inline-block;
+         background-color: #e5e5e5;
+         padding: 0px 10px;
+         width: 100%;
+         max-width: 400px;
+         overflow-x: scroll;
+         border: 1px solid #cdcdcd;
+         border-radius: 4px;
+         margin-top: 10px;
+      }
+   </style>
+</head>
+
+<body style="width: 900px; margin: 0 auto;">
+   <h2 style="text-align: center;">Signature Form</h2>
+   <div style="display: flex; justify-content: space-around;">
+      <div>
+         <form action="/action_page.php">
+            <label for="fname">Name</label><br>
+            <input type="text" id="name" name="fname" placeholder="John Smith"><br><br />
+            <label for="lname">Title</label><br>
+            <input type="text" id="title" name="lname" placeholder="Title"><br><br>
+            <label for="lname">Email</label><br>
+            <input type="text" id="email" name="email" placeholder="you@springeats.com"><br><br>
+            <label for="lname">Phone</label><br>
+            <input type="text" id="phone" name="phone" placeholder="xxx-xxx-xxxx"><br><br>
+            <label for="lname">Calendly Name</label><br>
+            <input type="text" id="calendly-name" name="calendly" placeholder="calendly name"><br><br>
+            <label for="lname">Calendly Link</label><br>
+            <input type="text" id="calendly-link" name="calendly-link" placeholder="calendly link"><br><br>
+         </form>
+      </div>
+      <div>
          <div id="table">
             <table
                style="font-size: 14px; font-family: 'Helvetica'; color:#004736; line-height: 16px; font-weight: 300;border-collapse:collapse;border-spacing:0;margin:0;padding:0">
                <tr>
                   <td style="padding:7px 0px">
-                     <a href="https://springeats.com"><img src="images/springeats_logo.png" width="60"  /></a>
+                     <a href="https://springeats.com"><img src="images/springeats_logo.png" width="60" /></a>
                   </td>
                </tr>
                <tr>
-                  <td id="name-field" style="color:#004736; font-family:'Georgia'; font-size: 18px; line-height: 20px; font-weight: 400;">
+                  <td id="name-field"
+                     style="color:#004736; font-family:'Georgia'; font-size: 18px; line-height: 20px; font-weight: 400;">
                      John Smith
                   </td>
                </tr>
@@ -73,7 +81,7 @@
                   <td style="padding: 5px 0px;">
                      <span id="title-field"
                         style="border:1.2px solid #FFC327; padding:5px 10px; border-radius: 30px; display: inline-block">
-                     Title
+                        Title
                      </span>
                   </td>
                </tr>
@@ -82,72 +90,81 @@
                </tr>
                <tr>
                   <td><a href="mailto:john@springeats.com" style="text-decoration: none; color:#004736" id="email-field"
-                     target="_blank">john@springeats.com</a></td>
+                        target="_blank">john@springeats.com</a></td>
                </tr>
                <tr>
                   <td style="padding-top: 8px;">
                      <a id="calendly-link-field" href="https://calendly.com/testme"
                         style="text-decoration: none; color:#004736;margin-right: 10px" target="_blank">
-                     <img src="images/calendly_icon.png" width="12" height="12"
-                        style="margin-right: 5px;display: inline-block; vertical-align: middle;" />
-                     <span id="calendly-name-field" style="vertical-align: middle;">JohnSmith</span>
+                        <img src="images/calendly_icon.png" width="12" height="12"
+                           style="margin-right: 5px;display: inline-block; vertical-align: middle;" />
+                        <span id="calendly-name-field" style="vertical-align: middle;">JohnSmith</span>
                      </a>
                      <a href="https://www.linkedin.com/company/springeats/"
                         style="text-decoration: none; color:#004736;margin-right: 10px" target="_blank">
-                     <img src="images/linkedin_icon.png" width="10" height="10 "
-                        style="margin-right: 5px;display: inline-block; vertical-align: middle;" />
-                     <span style="vertical-align: middle;">springeats</span>
+                        <img src="images/linkedin_icon.png" width="10" height="10 "
+                           style="margin-right: 5px;display: inline-block; vertical-align: middle;" />
+                        <span style="vertical-align: middle;">springeats</span>
                      </a>
                   </td>
                </tr>
             </table>
-            <div class="code-snippet">
-               <pre>
-               <code id="code-snippets">
+         </div>
+         <div id="code-snippet-block" style="display:none;">
+            <pre>
+               <code id="code-snippets" >
                </code>
             </pre>
-            </div>
          </div>
+         <br />
+         <button onclick="updatedCodeSnippet();">Show Code</button>
       </div>
-      <script>
-         function updatedCodeSnippet  (code)  {
-            const table = document.getElementById("table").innerHTML
-           
-            var test = "<!DOCTYPE html><html lang='en'><body> "+ table + "</body></html>"
- 
-            document.getElementById("code-snippets").innerText = test 
-          }
-         document.getElementById('name').addEventListener('keyup', (event) => {
-            document.getElementById('name-field').innerHTML = event.target.value;
-            updatedCodeSnippet()
-         })
-         
-         document.getElementById('title').addEventListener('keyup', (event) => {
-            document.getElementById('title-field').innerHTML = event.target.value;
-            updatedCodeSnippet()
-         })
-         
-         document.getElementById('email').addEventListener('keyup', (event) => {
-            document.getElementById('email-field').innerHTML = event.target.value;
-            document.getElementById('email-field').setAttribute('href', `mailto:${event.target.value}`);
-            updatedCodeSnippet()
-         })
-         
-         document.getElementById('phone').addEventListener('keyup', (event) => {
-            document.getElementById('phone-field').innerHTML = event.target.value;
-            updatedCodeSnippet()
-         })
-         document.getElementById('calendly-name').addEventListener('keyup', (event) => {
-            document.getElementById('calendly-name-field').innerHTML = event.target.value;
-            updatedCodeSnippet()
-         })
-         document.getElementById('calendly-link').addEventListener('keyup', (event) => {
-            document.getElementById('calendly-link-field').setAttribute('href', event.target.value);
-            updatedCodeSnippet()
-         })
+   </div>
+   <script>
+      function updatedCodeSnippet(code) {
+         const table = document.getElementById("table").innerHTML
 
-         
-      </script>
-   </body>
+         var test = "<!DOCTYPE html><html lang='en'><body> " + table + "</body></html>"
+         document.getElementById("code-snippet-block").style.display = 'inline-block';
+         document.getElementById("code-snippets").innerText = test;
+      }
+      document.getElementById('name').addEventListener('keyup', (event) => {
+         document.getElementById('name-field').innerHTML = event.target.value;
+         document.getElementById("code-snippet-block").style.display = 'none';
+         // updatedCodeSnippet()
+      })
+
+      document.getElementById('title').addEventListener('keyup', (event) => {
+         document.getElementById('title-field').innerHTML = event.target.value;
+         document.getElementById("code-snippet-block").style.display = 'none';
+         // updatedCodeSnippet()
+      })
+
+      document.getElementById('email').addEventListener('keyup', (event) => {
+         document.getElementById('email-field').innerHTML = event.target.value;
+         document.getElementById('email-field').setAttribute('href', `mailto:${event.target.value}`);
+         document.getElementById("code-snippet-block").style.display = 'none';
+         // updatedCodeSnippet()
+      })
+
+      document.getElementById('phone').addEventListener('keyup', (event) => {
+         document.getElementById('phone-field').innerHTML = event.target.value;
+         document.getElementById("code-snippet-block").style.display = 'none';
+         // updatedCodeSnippet()
+      })
+      document.getElementById('calendly-name').addEventListener('keyup', (event) => {
+         document.getElementById('calendly-name-field').innerHTML = event.target.value;
+         document.getElementById("code-snippet-block").style.display = 'none';
+         // updatedCodeSnippet()
+      })
+      document.getElementById('calendly-link').addEventListener('keyup', (event) => {
+         document.getElementById('calendly-link-field').setAttribute('href', event.target.value);
+         document.getElementById("code-snippet-block").style.display = 'none';
+         // updatedCodeSnippet()
+      })
+
+
+   </script>
+</body>
+
 </html>
-
